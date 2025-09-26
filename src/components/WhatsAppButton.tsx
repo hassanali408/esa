@@ -7,7 +7,6 @@ import { MessageCircle } from 'lucide-react';
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
   
-  // WhatsApp business number - replace with actual number
   const whatsappNumber = "1234567890";
   const defaultMessage = "Hello! I'm interested in your glazing services. Could you please provide me with more information?";
   
