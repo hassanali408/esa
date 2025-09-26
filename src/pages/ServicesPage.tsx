@@ -5,7 +5,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Clock, Shield, Star, ArrowRight } from 'lucide-react';
+import { CheckCircle, Shield, ArrowRight } from 'lucide-react';
 
 export default function ServicesPage() {
   const serviceDetails = [
@@ -84,7 +84,7 @@ export default function ServicesPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Detailed Service Information</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Learn more about our specialized glazing services and what's included
+                Learn more about our specialized glazing services and what&apos;s included
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                   <CardContent>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="md:col-span-2">
-                        <h4 className="font-semibold mb-3">What's Included:</h4>
+                        <h4 className="font-semibold mb-3">What&apos;s Included:</h4>
                         <ul className="space-y-2">
                           {service.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-center gap-2">

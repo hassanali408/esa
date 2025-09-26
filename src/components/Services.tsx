@@ -141,7 +141,7 @@ export default function Services() {
             </div>
             <CardContent className="p-6">
               <p className="text-muted-foreground mb-4">
-                Expert residential glazing services to enhance your home's comfort and energy efficiency.
+                Expert residential glazing services to enhance your home&apos;s comfort and energy efficiency.
               </p>
               <Button variant="outline" data-testid="button-residential-projects">
                 View Residential Work

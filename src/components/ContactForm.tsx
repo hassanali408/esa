@@ -263,7 +263,7 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Contact Us</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get in touch with our glazing experts. We're here to help with all your glass installation and repair needs.
+            Get in touch with our glazing experts. We&apos;re here to help with all your glass installation and repair needs.
           </p>
         </div>
 
@@ -314,7 +314,7 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Message Sent Successfully!</h3>
                   <p className="text-muted-foreground mb-4">
-                    Thank you for contacting us. We'll get back to you within 24 hours.
+                    Thank you for contacting us. We&apos;ll get back to you within 24 hours.
                   </p>
                   <Button onClick={() => setIsSuccess(false)} data-testid="button-send-another">
                     Send Another Message

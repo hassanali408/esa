@@ -126,7 +126,7 @@ export default function FAQ() {
           <CardContent className="p-8 text-center">
             <h3 className="text-xl font-bold mb-4">Still Have Questions?</h3>
             <p className="text-muted-foreground mb-6">
-              Can't find the answer you're looking for? Our friendly team is here to help with any questions about our glazing services.
+              Can&apos;t find the answer you&apos;re looking for? Our friendly team is here to help with any questions about our glazing services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="flex items-center gap-2" data-testid="button-call-support">

@@ -83,7 +83,7 @@ export default function Testimonials() {
             What Our Customers Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers have to say about our glazing services.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say about our glazing services.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default function Testimonials() {
                 <div className="relative mb-6 flex-grow">
                   <Quote className="w-8 h-8 text-primary/20 absolute -top-2 -left-2" />
                   <p className="text-muted-foreground leading-relaxed pl-6">
-                    "{testimonial.content}"
+                    &quot;{testimonial.content}&quot;
                   </p>
                 </div>
 

@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
                   <h3 className="font-semibold mb-2">Policy Updates</h3>
                   <p className="text-muted-foreground text-sm">
                     We may update this Privacy Policy from time to time. We will notify you of any significant changes 
-                    by posting the new policy on our website and updating the "Last updated" date.
+                    by posting the new policy on our website and updating the &quot;Last updated&quot; date.
                   </p>
                 </CardContent>
               </Card>
