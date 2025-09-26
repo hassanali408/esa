@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Award, Users, Calendar } from 'lucide-react';
+import Image from 'next/image';
 // Using public folder for images
 
 interface AboutProps {
@@ -76,9 +77,11 @@ export default function About({ isHomePage = false }: AboutProps) {
           {/* First section - Image left, content right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
+              <Image 
                 src="/stock_images/professional_glazier_7e77ca0d.jpg" 
                 alt="Professional glazier at work" 
+                width={600}
+                height={400}
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
             </div>

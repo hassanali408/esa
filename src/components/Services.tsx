@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import { 
   Home, 
   Building, 
@@ -105,9 +106,11 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           <Card className="overflow-hidden hover-elevate">
             <div className="relative h-64">
-              <img 
+              <Image 
                 src="/stock_images/modern_office_buildi_ed1d25ed.jpg" 
                 alt="Commercial glazing project" 
+                width={600}
+                height={256}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -128,9 +131,11 @@ export default function Services() {
 
           <Card className="overflow-hidden hover-elevate">
             <div className="relative h-64">
-              <img 
+              <Image 
                 src="/stock_images/residential_window_i_f85c2660.jpg" 
                 alt="Residential glazing project" 
+                width={600}
+                height={256}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
