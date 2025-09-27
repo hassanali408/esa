@@ -235,7 +235,11 @@ export default function GalleryPage() {
                           </div>
                         </div>
 
-                        <Button className="w-full mt-6" data-testid="button-contact-project">
+                        <Button 
+                          className="w-full mt-6" 
+                          data-testid="button-contact-project"
+                          onClick={() => window.location.href = '/contact'}
+                        >
                           Contact Us About Similar Project
                         </Button>
                       </div>
@@ -261,10 +265,19 @@ export default function GalleryPage() {
               Contact us today to discuss your glazing needs and get a personalized quote for your project
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" data-testid="button-get-quote">
+              <Button 
+                size="lg" 
+                data-testid="button-get-quote"
+                onClick={() => window.location.href = '/contact'}
+              >
                 Get Free Quote
               </Button>
-              <Button size="lg" variant="outline" data-testid="button-view-services">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                data-testid="button-view-services"
+                onClick={() => window.location.href = '/services'}
+              >
                 View Our Services
               </Button>
             </div>

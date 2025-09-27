@@ -72,7 +72,12 @@ export default function ServicesPage() {
             <p className="text-xl max-w-3xl mx-auto mb-8">
               Manufacturing and Installers of UPVC & Aluminium. All repair work with free quotations and quick services.
             </p>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              onClick={() => window.location.href = '/contact'}
+            >
               Get Free Estimate
             </Button>
           </div>
@@ -90,7 +95,7 @@ export default function ServicesPage() {
 
             <div className="space-y-8">
               {serviceDetails.map((service, index) => (
-                <Card key={index} className="hover-elevate">
+                <Card key={index} id={`service-${index}`} className="hover-elevate">
                   <CardHeader>
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                       <div>
@@ -117,11 +122,26 @@ export default function ServicesPage() {
                         </ul>
                       </div>
                       <div className="flex flex-col gap-3">
-                        <Button className="w-full" data-testid={`button-quote-${index}`}>
+                        <Button 
+                          className="w-full" 
+                          data-testid={`button-quote-${index}`}
+                          onClick={() => window.location.href = '/contact'}
+                        >
                           Get Quote
                           <ArrowRight className="ml-2 w-4 h-4" />
                         </Button>
-                        <Button variant="outline" className="w-full" data-testid={`button-learn-${index}`}>
+                        <Button 
+                          variant="outline" 
+                          className="w-full" 
+                          data-testid={`button-learn-${index}`}
+                          onClick={() => {
+                            // Scroll to the specific service section or show more details
+                            const element = document.getElementById(`service-${index}`);
+                            if (element) {
+                              element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                          }}
+                        >
                           Learn More
                         </Button>
                       </div>

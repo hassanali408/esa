@@ -7,7 +7,7 @@ import { MessageCircle } from 'lucide-react';
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
   
-  const whatsappNumber = "1234567890";
+  const whatsappNumber = "02085992753";
   const defaultMessage = "Hello! I'm interested in your glazing services. Could you please provide me with more information?";
   
   const handleClick = () => {
@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
+    <div className="fixed bottom-12 right-4 md:bottom-18 md:right-6 z-50">
       <div 
         className="relative"
         onMouseEnter={() => setIsHovered(true)}
@@ -42,7 +42,7 @@ export default function WhatsAppButton() {
         </Button>
         
         {/* Pulse animation */}
-        <div className="absolute inset-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 animate-ping opacity-20"></div>
+        <div className="absolute inset-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 animate-ping opacity-20 -z-10"></div>
       </div>
     </div>
   );

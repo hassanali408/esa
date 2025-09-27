@@ -160,11 +160,22 @@ export default function WarrantyPage() {
             <div className="text-center mt-12">
               <h3 className="text-xl font-semibold mb-4">Need to File a Warranty Claim?</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="flex items-center gap-2" data-testid="button-call-warranty">
+                <Button 
+                  size="lg" 
+                  className="flex items-center gap-2" 
+                  data-testid="button-call-warranty"
+                  onClick={() => window.location.href = 'tel:+15551234567'}
+                >
                   <Phone className="w-5 h-5" />
                   Call Warranty Hotline
                 </Button>
-                <Button size="lg" variant="outline" className="flex items-center gap-2" data-testid="button-email-warranty">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="flex items-center gap-2" 
+                  data-testid="button-email-warranty"
+                  onClick={() => window.location.href = 'mailto:warranty@esaglazing.com'}
+                >
                   <Mail className="w-5 h-5" />
                   Email Warranty Department
                 </Button>
