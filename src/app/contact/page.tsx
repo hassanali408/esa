@@ -1,5 +1,17 @@
-import ContactPage from "@/pages/ContactPage";
+import Header from '@/components/Header';
+import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Contact() {
-  return <ContactPage />;
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <ContactForm isFullPage={true} />
+      </main>
+      <Footer />
+      <WhatsAppButton />
+    </div>
+  );
 }
