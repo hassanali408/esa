@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Award, Users, Calendar } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 // Using public folder for images
 
 interface AboutProps {
@@ -51,9 +52,11 @@ export default function About({ isHomePage = false }: AboutProps) {
           </div>
 
           <div className="text-center">
-            <Button size="lg" data-testid="button-learn-more">
-              Learn More About Us
-            </Button>
+            <Link href="/about">
+              <Button size="lg" data-testid="button-learn-more">
+                Learn More About Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

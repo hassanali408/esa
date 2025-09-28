@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 import { 
   Home, 
   Building, 
@@ -68,7 +69,7 @@ export default function Services() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           {services.map((service, index) => (
-            <Card key={index} className="hover-elevate transition-all duration-300">
+            <Card key={index} className="hover-elevate transition-all duration-300 flex flex-col h-full">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="bg-primary p-3 rounded-lg">
@@ -77,11 +78,11 @@ export default function Services() {
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col flex-grow">
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 flex-grow">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center gap-2 text-sm">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
@@ -89,14 +90,18 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="mt-6 w-full"
-                  data-testid={`button-learn-more-${index}`}
-                >
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <div className="mt-6">
+                  <Link href="/services">
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      data-testid={`button-learn-more-${index}`}
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -123,9 +128,11 @@ export default function Services() {
               <p className="text-muted-foreground mb-4">
                 Professional commercial glazing services for offices, retail spaces, and industrial buildings.
               </p>
-              <Button variant="outline" data-testid="button-commercial-projects">
-                View Commercial Work
-              </Button>
+              <Link href="/gallery">
+                <Button variant="outline" data-testid="button-commercial-projects">
+                  View Commercial Work
+                </Button>
+              </Link>
             </CardContent>
           </Card>
 
@@ -148,9 +155,11 @@ export default function Services() {
               <p className="text-muted-foreground mb-4">
                 Expert residential glazing services to enhance your home&apos;s comfort and energy efficiency.
               </p>
-              <Button variant="outline" data-testid="button-residential-projects">
-                View Residential Work
-              </Button>
+              <Link href="/gallery">
+                <Button variant="outline" data-testid="button-residential-projects">
+                  View Residential Work
+                </Button>
+              </Link>
             </CardContent>
           </Card>
         </div>
@@ -163,10 +172,12 @@ export default function Services() {
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Get in touch with our expert team for a free consultation and quote tailored to your specific needs.
           </p>
-          <Button size="lg" className="px-8" data-testid="button-get-started">
-            Get Free Quote
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="px-8" data-testid="button-get-started">
+              Get Free Quote
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

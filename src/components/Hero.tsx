@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Shield, Clock, Users } from 'lucide-react';
+import Link from 'next/link';
 // Using public folder for images
 
 export default function Hero() {
@@ -25,22 +26,26 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 md:mb-12 px-4">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
-            data-testid="button-get-quote"
-          >
-            Get Free Quote
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg backdrop-blur-sm bg-white/10"
-            data-testid="button-our-work"
-          >
-            View Our Work
-          </Button>
+          <Link href="/contact">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
+              data-testid="button-get-quote"
+            >
+              Get Free Quote
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
+          <Link href="/gallery">
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg backdrop-blur-sm bg-white/10"
+              data-testid="button-our-work"
+            >
+              View Our Work
+            </Button>
+          </Link>
         </div>
 
         {/* Features */}
