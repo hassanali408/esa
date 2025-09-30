@@ -44,15 +44,13 @@ export default function Header() {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-3">
-            <div className="bg-white p-2 rounded-lg">
-              <Image 
-                src="/stock_images/logo.png" 
-                alt="ESA Windows & Doors Logo" 
-                width={65} 
-                height={65}
-                className="object-contain"
-              />
-            </div>
+            <Image 
+              src="/stock_images/logo.png" 
+              alt="ESA Windows & Doors Logo" 
+              width={65} 
+              height={65}
+              className="object-contain brightness-0 invert"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-bold">ESA</span>
               <span className="text-sm font-medium opacity-90">WINDOWS & DOORS</span>
