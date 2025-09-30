@@ -32,7 +32,7 @@ export default function About({ isHomePage = false }: AboutProps) {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              Why Choose ESA Glazing?
+              Why Choose ESA Windows & Doors?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Manufacturing and Installers of UPVC & Aluminium. All repair work with free quotations and quick services.
@@ -69,7 +69,7 @@ export default function About({ isHomePage = false }: AboutProps) {
       <div className="container mx-auto px-4">
         {/* Hero section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About ESA Glazing</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About ESA Windows & Doors</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Manufacturing and Installers of UPVC & Aluminium. Your trusted partner for professional glazing services.
           </p>
@@ -91,7 +91,7 @@ export default function About({ isHomePage = false }: AboutProps) {
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                ESA Glazing specializes in manufacturing and installing UPVC & Aluminium windows and doors. We provide comprehensive repair services with free quotations and quick turnaround times.
+                ESA Windows & Doors specializes in manufacturing and installing UPVC & Aluminium windows and doors. We provide comprehensive repair services with free quotations and quick turnaround times.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Our services include mirror cutting, glass cutting to size, moisture glass replacement, window and door repairs, glass replacement, and professional sealing services.

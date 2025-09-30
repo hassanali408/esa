@@ -46,7 +46,7 @@ export default function Header() {
             <div className="bg-primary-foreground text-primary px-3 py-2 rounded-lg font-bold text-xl">
               ESA
             </div>
-            <span className="text-xl font-bold">GLAZING</span>
+            <span className="text-xl font-bold">WINDOWS & DOORS</span>
           </Link>
 
           {/* Desktop Navigation */}

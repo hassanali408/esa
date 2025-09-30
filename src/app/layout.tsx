@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ESA Glazing - Professional Glazing Services",
+  title: "ESA Windows & Doors - Professional Glazing Services",
   description: "Professional glazing services including window installation, glass repair, and commercial glazing solutions.",
 };
 

@@ -10,7 +10,7 @@ export default function Testimonials() {
       role: "Homeowner",
       location: "Suburban Hills",
       rating: 5,
-      content: "ESA Glazing transformed our home with beautiful new energy-efficient windows. The team was professional, punctual, and the quality of work exceeded our expectations. Our energy bills have decreased significantly!",
+      content: "ESA Windows & Doors transformed our home with beautiful new energy-efficient windows. The team was professional, punctual, and the quality of work exceeded our expectations. Our energy bills have decreased significantly!",
       avatar: "/api/placeholder/64/64",
       initials: "SJ"
     },
@@ -20,7 +20,7 @@ export default function Testimonials() {
       role: "Property Manager",
       location: "Downtown Office Complex",
       rating: 5,
-      content: "We've worked with ESA Glazing on multiple commercial projects. Their expertise in large-scale glazing installations is unmatched. Always on time, within budget, and exceptional quality.",
+      content: "We've worked with ESA Windows & Doors on multiple commercial projects. Their expertise in large-scale glazing installations is unmatched. Always on time, within budget, and exceptional quality.",
       avatar: "/api/placeholder/64/64",
       initials: "MC"
     },
@@ -30,7 +30,7 @@ export default function Testimonials() {
       role: "Restaurant Owner",
       location: "City Center",
       rating: 5,
-      content: "When our storefront glass was damaged in a storm, ESA Glazing responded immediately. They had us back in business within 24 hours. Outstanding emergency service and fair pricing.",
+      content: "When our storefront glass was damaged in a storm, ESA Windows & Doors responded immediately. They had us back in business within 24 hours. Outstanding emergency service and fair pricing.",
       avatar: "/api/placeholder/64/64",
       initials: "ER"
     },
@@ -40,7 +40,7 @@ export default function Testimonials() {
       role: "Homeowner",
       location: "Riverside Community",
       rating: 5,
-      content: "The patio door installation was flawless. The integrated blinds are a game-changer, and the security features give us peace of mind. Highly recommend ESA Glazing for any glazing needs.",
+      content: "The patio door installation was flawless. The integrated blinds are a game-changer, and the security features give us peace of mind. Highly recommend ESA Windows & Doors for any glazing needs.",
       avatar: "/api/placeholder/64/64",
       initials: "DT"
     },
@@ -50,7 +50,7 @@ export default function Testimonials() {
       role: "Facility Manager",
       location: "Industrial Park",
       rating: 5,
-      content: "ESA Glazing helped us upgrade our entire facility with energy-efficient windows. The project management was excellent, and the results have improved our working environment significantly.",
+      content: "ESA Windows & Doors helped us upgrade our entire facility with energy-efficient windows. The project management was excellent, and the results have improved our working environment significantly.",
       avatar: "/api/placeholder/64/64",
       initials: "LP"
     },
@@ -60,7 +60,7 @@ export default function Testimonials() {
       role: "Homeowner",
       location: "Heritage District",
       rating: 5,
-      content: "Restoring the historic windows in our century-old home required special expertise. ESA Glazing preserved the original character while improving functionality. True craftmanship!",
+      content: "Restoring the historic windows in our century-old home required special expertise. ESA Windows & Doors preserved the original character while improving functionality. True craftmanship!",
       avatar: "/api/placeholder/64/64",
       initials: "RW"
     }

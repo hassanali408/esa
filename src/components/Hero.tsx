@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight px-4">
           Professional
-          <span className="block text-blue-400">Glazing Services</span>
+          <span className="block text-blue-400">Windows & Doors</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-4">
           Expert glass installation, window replacement, and commercial glazing solutions with over 15 years of experience

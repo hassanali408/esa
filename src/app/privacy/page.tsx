@@ -71,7 +71,7 @@ export default function Privacy() {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Privacy Policy</h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              At ESA Glazing, we are committed to protecting your privacy and personal information. 
+              At ESA Windows & Doors, we are committed to protecting your privacy and personal information. 
               This policy explains how we collect, use, and safeguard your data.
             </p>
             <p className="text-sm text-muted-foreground mt-4">
@@ -112,7 +112,7 @@ export default function Privacy() {
                     If you have any questions about this Privacy Policy or how we handle your personal information, please contact us:
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p><strong>ESA Glazing</strong></p>
+                    <p><strong>ESA Windows & Doors</strong></p>
                     <p>123 Glazing Street, Business District</p>
                     <p>City, State 12345</p>
                     <p>Email: privacy@esaglazing.com</p>

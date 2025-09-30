@@ -8,7 +8,7 @@ export default function Terms() {
     {
       title: "Service Agreement",
       content: [
-        "These terms govern the glazing services provided by ESA Glazing.",
+        "These terms govern the glazing services provided by ESA Windows & Doors.",
         "By engaging our services, you agree to these terms and conditions.",
         "Services include window installation, glass repair, and commercial glazing solutions.",
         "All work will be performed according to industry standards and local building codes."
@@ -44,7 +44,7 @@ export default function Terms() {
     {
       title: "Liability and Insurance",
       content: [
-        "ESA Glazing maintains full liability insurance for all projects.",
+        "ESA Windows & Doors maintains full liability insurance for all projects.",
         "Our liability is limited to the cost of repair or replacement of defective work.",
         "We are not responsible for damage to personal property not related to our work.",
         "Customers are responsible for providing safe access to work areas."
@@ -88,7 +88,7 @@ export default function Terms() {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Terms of Service</h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              These terms and conditions govern the glazing services provided by ESA Glazing. 
+              These terms and conditions govern the glazing services provided by ESA Windows & Doors. 
               Please read them carefully before engaging our services.
             </p>
             <p className="text-sm text-muted-foreground mt-4">
@@ -126,7 +126,7 @@ export default function Terms() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    These terms constitute a legal agreement between you and ESA Glazing. 
+                    These terms constitute a legal agreement between you and ESA Windows & Doors. 
                     If you do not agree to these terms, please do not engage our services. 
                     For questions about these terms, please contact us before proceeding with any work.
                   </p>
@@ -143,7 +143,7 @@ export default function Terms() {
                     If you have any questions about these Terms of Service, please contact us:
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p><strong>ESA Glazing</strong></p>
+                    <p><strong>ESA Windows & Doors</strong></p>
                     <p>123 Glazing Street, Business District</p>
                     <p>City, State 12345</p>
                     <p>Email: info@esaglazing.com</p>

@@ -20,7 +20,7 @@ const createEmailTemplate = (formData: any) => {
     <html>
     <head>
       <meta charset="utf-8">
-      <title>New Contact Form Submission - ESA Glazing</title>
+      <title>ESA Windows & Doors</title>
       <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
@@ -37,7 +37,7 @@ const createEmailTemplate = (formData: any) => {
       <div class="container">
         <div class="header">
           <h1>🔧 New Contact Form Submission</h1>
-          <p>ESA Glazing - Professional Glazing Services</p>
+          <p>ESA Windows & Doors - Professional Glazing Services</p>
         </div>
         
         <div class="content">
@@ -92,7 +92,7 @@ const createEmailTemplate = (formData: any) => {
             <li>Contact the customer within 24 hours</li>
             <li>Schedule a site visit if needed</li>
           </ul>
-          <p>This email was automatically generated from the ESA Glazing website contact form.</p>
+          <p>This email was automatically generated from the ESA Windows & Doors website contact form.</p>
         </div>
       </div>
     </body>
@@ -137,13 +137,13 @@ export async function POST(request: NextRequest) {
     
     // Email options
     const mailOptions = {
-      from: `"ESA Glazing Website" <${process.env.ADMIN_EMAIL}>`,
+      from: `"ESA Windows & Doors Website" <${process.env.ADMIN_EMAIL}>`,
       to: process.env.ADMIN_EMAIL, // Send to admin
       replyTo: email, // Allow admin to reply directly to customer
       subject: `🔧 New Contact Form Submission - ${service} - ${name}`,
       html: emailHtml,
       text: `
-New Contact Form Submission - ESA Glazing
+New Contact Form Submission - ESA Windows & Doors
 
 Name: ${name}
 Email: ${email}
@@ -168,7 +168,7 @@ Please respond to this customer within 24 hours.
       <html>
       <head>
         <meta charset="utf-8">
-        <title>Thank You - ESA Glazing</title>
+        <title>Thank You - ESA Windows & Doors</title>
         <style>
           body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
           .container { max-width: 600px; margin: 0 auto; padding: 20px; }
@@ -179,7 +179,7 @@ Please respond to this customer within 24 hours.
       <body>
         <div class="container">
           <div class="header">
-            <h1>✅ Thank You for Contacting ESA Glazing!</h1>
+            <h1>✅ Thank You for Contacting ESA Windows & Doors!</h1>
           </div>
           <div class="content">
             <p>Dear ${name},</p>
@@ -193,7 +193,7 @@ Please respond to this customer within 24 hours.
             </ul>
             <p>If you have any urgent questions, please call us at:</p>
             <p><strong>📞 0208 599 2753</strong> or <strong>0730 5130 643</strong></p>
-            <p>Best regards,<br>The ESA Glazing Team</p>
+            <p>Best regards,<br>The ESA Windows & Doors Team</p>
           </div>
         </div>
       </body>
@@ -202,9 +202,9 @@ Please respond to this customer within 24 hours.
 
     // Send confirmation to customer
     await transporter.sendMail({
-      from: `"ESA Glazing" <${process.env.ADMIN_EMAIL}>`,
+      from: `"ESA Windows & Doors" <${process.env.ADMIN_EMAIL}>`,
       to: email,
-      subject: 'Thank You for Contacting ESA Glazing - We\'ll Be In Touch Soon!',
+      subject: 'Thank You for Contacting ESA Windows & Doors - We\'ll Be In Touch Soon!',
       html: customerEmailHtml,
     });
 
