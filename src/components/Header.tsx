@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Mail } from 'lucide-react';
@@ -42,11 +43,20 @@ export default function Header() {
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="bg-primary-foreground text-primary px-3 py-2 rounded-lg font-bold text-xl">
-              ESA
+          <Link href="/" className="flex items-center gap-3">
+            <div className="bg-white p-2 rounded-lg">
+              <Image 
+                src="/stock_images/logo.png" 
+                alt="ESA Windows & Doors Logo" 
+                width={65} 
+                height={65}
+                className="object-contain"
+              />
             </div>
-            <span className="text-xl font-bold">WINDOWS & DOORS</span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold">ESA</span>
+              <span className="text-sm font-medium opacity-90">WINDOWS & DOORS</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   MapPin, 
   Phone, 
@@ -53,11 +54,20 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {/* Company info */}
             <div className="lg:col-span-1">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="bg-primary-foreground text-primary px-3 py-2 rounded-lg font-bold text-xl">
-                  ESA
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-white p-2 rounded-lg">
+                  <Image 
+                    src="/stock_images/logo.png" 
+                    alt="ESA Windows & Doors Logo" 
+                    width={65} 
+                    height={65}
+                    className="object-contain"
+                  />
                 </div>
-                <span className="text-xl font-bold">GLAZING</span>
+                <div className="flex flex-col">
+                  <span className="text-xl font-bold">ESA</span>
+                  <span className="text-sm font-medium opacity-90">WINDOWS & DOORS</span>
+                </div>
               </div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
                 Manufacturing and Installers of UPVC & Aluminium. All repair work with free quotations and quick services.
