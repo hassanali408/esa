@@ -112,7 +112,7 @@ export default function Services() {
           <Card className="overflow-hidden hover-elevate">
             <div className="relative h-64">
               <Image 
-                src="/stock_images/modern_office_buildi_ed1d25ed.jpg" 
+                src="/stock_images/project_image_01.jpeg" 
                 alt="Commercial glazing project" 
                 width={600}
                 height={256}
@@ -139,7 +139,7 @@ export default function Services() {
           <Card className="overflow-hidden hover-elevate">
             <div className="relative h-64">
               <Image 
-                src="/stock_images/residential_window_i_f85c2660.jpg" 
+                src="/stock_images/project_image_08.jpeg" 
                 alt="Residential glazing project" 
                 width={600}
                 height={256}

@@ -81,7 +81,7 @@ export default function About({ isHomePage = false }: AboutProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <Image 
-                src="/stock_images/professional_glazier_7e77ca0d.jpg" 
+                src="/stock_images/project_image_32.jpeg" 
                 alt="Professional glazier at work" 
                 width={600}
                 height={400}
@@ -128,7 +128,63 @@ export default function About({ isHomePage = false }: AboutProps) {
             </div>
           </div>
 
-          {/* Third section - Mission */}
+          {/* Third section - Project Showcase */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-foreground">Recent Projects</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+              Take a look at some of our recent glazing projects showcasing our expertise and quality workmanship.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="overflow-hidden hover-elevate">
+                <Image 
+                  src="/stock_images/project_image_02.jpeg" 
+                  alt="Residential window project" 
+                  width={400}
+                  height={250}
+                  className="w-full h-48 object-cover"
+                />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Luxury Home Windows</h3>
+                  <p className="text-sm text-muted-foreground">Triple-glazed energy efficient windows</p>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden hover-elevate">
+                <Image 
+                  src="/stock_images/project_image_12.jpeg" 
+                  alt="Commercial glazing project" 
+                  width={400}
+                  height={250}
+                  className="w-full h-48 object-cover"
+                />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Office Building</h3>
+                  <p className="text-sm text-muted-foreground">Complete glazing solution</p>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden hover-elevate">
+                <Image 
+                  src="/stock_images/project_image_24.jpeg" 
+                  alt="Window replacement project" 
+                  width={400}
+                  height={250}
+                  className="w-full h-48 object-cover"
+                />
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Window Replacement</h3>
+                  <p className="text-sm text-muted-foreground">Modern frames and energy efficient glass</p>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="mt-8">
+              <Link href="/gallery">
+                <Button variant="outline" size="lg">
+                  View All Projects
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Fourth section - Mission */}
           <div className="text-center bg-muted/30 rounded-lg p-12">
             <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
