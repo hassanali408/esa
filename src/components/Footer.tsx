@@ -130,8 +130,8 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <div className="text-primary-foreground/80 text-sm">
-                    <p>691 Unit B</p>
-                    <p>London, UK</p>
+                    <p>691 Unit B Green Lane</p>
+                    <p>RM8 1UU</p>
                   </div>
                 </div>
                 
@@ -151,9 +151,8 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <div className="text-primary-foreground/80 text-sm">
-                    <p>Mon-Fri: 7:00 AM - 6:00 PM</p>
-                    <p>Sat: 8:00 AM - 4:00 PM</p>
-                    <p>Sun: Emergency only</p>
+                    <p>Monday to Saturday: 8:00 AM - 6:30 PM</p>
+                    <p>Sunday: Emergency only</p>
                   </div>
                 </div>
               </div>

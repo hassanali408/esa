@@ -7,8 +7,8 @@ import { MessageCircle } from 'lucide-react';
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
   
-  const whatsappNumber = "02085992753";
-  const defaultMessage = "Hello! I'm interested in your glazing services. Could you please provide me with more information?";
+  const whatsappNumber = "+447305130643";
+  const defaultMessage = "";
   
   const handleClick = () => {
     const encodedMessage = encodeURIComponent(defaultMessage);

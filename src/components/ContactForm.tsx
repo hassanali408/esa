@@ -98,7 +98,7 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
     {
       icon: MapPin,
       title: 'Office Location',
-      details: ['691 Unit B', 'London, UK']
+      details: ['691 Unit B Green Lane', 'RM8 1UU']
     },
     {
       icon: Phone,
@@ -113,7 +113,7 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Monday - Friday: 8:00 AM - 6:00 PM', 'Saturday: 9:00 AM - 4:00 PM', 'Sunday: Emergency only']
+      details: ['Monday to Saturday: 8:00 AM - 6:30 PM', 'Sunday: Emergency only']
     }
   ];
 
