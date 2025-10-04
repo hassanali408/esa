@@ -33,7 +33,11 @@ export default function Gallery() {
     "/stock_images/project_image_24.jpeg",
     "/stock_images/project_image_26.jpeg",
     "/stock_images/project_image_31.jpeg",
-    "/stock_images/project_image_32.jpeg"
+    "/stock_images/project_image_32.jpeg",
+    "/stock_images/project_image_33.jpeg",
+    "/stock_images/project_image_34.jpeg",
+    "/stock_images/project_image_35.jpeg",
+    "/stock_images/project_image_36.jpeg"
   ];
 
   return (
