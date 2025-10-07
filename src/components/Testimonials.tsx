@@ -6,63 +6,60 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Azmat Sahi",
       role: "Homeowner",
       location: "Suburban Hills",
       rating: 5,
-      content: "ESA Windows & Doors transformed our home with beautiful new energy-efficient windows. The team was professional, punctual, and the quality of work exceeded our expectations. Our energy bills have decreased significantly!",
+      content: "I recently had windows installed by Esa Glazing Limited, and I'm extremely satisfied with their work. From start to finish, the team was professional, punctual, and very skilled. The quality of the materials and installation was top-notch. They cleaned everything up after the job and made sure I was happy with the final result. Highly recommended for anyone looking for reliable and high-quality window installation in Dagenham!",
       avatar: "/api/placeholder/64/64",
-      initials: "SJ"
+      initials: "AS"
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Murad Hussein",
       role: "Property Manager",
       location: "Downtown Office Complex",
       rating: 5,
-      content: "We've worked with ESA Windows & Doors on multiple commercial projects. Their expertise in large-scale glazing installations is unmatched. Always on time, within budget, and exceptional quality.",
+      content: "Just recently had some windows made and fitted by this company. Very pleased with the service I received. Very polite clean and respectful. I'm going back for more work very satisfied. I have now comeback to add to my previous review. I've just had bathroom and toilet window and garden door with side window. Fitted . I'm very happy with the service. The work carried out. By this company. I've done my whole house. Now . Excellent work great people excellent service cant recommend them enough 5 stars +.",
       avatar: "/api/placeholder/64/64",
-      initials: "MC"
+      initials: "MH"
     },
     {
       id: 3,
-      name: "Emma Rodriguez",
+      name: "Jabil Miah",
       role: "Restaurant Owner",
       location: "City Center",
       rating: 5,
-      content: "When our storefront glass was damaged in a storm, ESA Windows & Doors responded immediately. They had us back in business within 24 hours. Outstanding emergency service and fair pricing.",
-      avatar: "/api/placeholder/64/64",
-      initials: "ER"
+      content: "Excellent company and very friendly. They came out late in the evening to help me out with a door that needed adjusting and wasnt closing properly (not one they supplied). Really Good service. Not the 1st time they have helped me and always happy to recommend them to others.",
+      initials: "JM"
     },
     {
       id: 4,
-      name: "David Thompson",
+      name: "G Play",
       role: "Homeowner",
       location: "Riverside Community",
       rating: 5,
-      content: "The patio door installation was flawless. The integrated blinds are a game-changer, and the security features give us peace of mind. Highly recommend ESA Windows & Doors for any glazing needs.",
-      avatar: "/api/placeholder/64/64",
-      initials: "DT"
+      content: "This company fitted a new composite door for me with an integral full-length frosted glass side panel. I could have gone with any glazing company for this work, but I'm happy I chose this one. The quality of materials used and their craftsmanship was good. I recommend this glazing company to those who wants the supply and fit of composite doors and double glazed windows. Many thanks for your help regarding this matter.",
+      initials: "GP"
     },
     {
       id: 5,
-      name: "Lisa Park",
+      name: "Behzad Chohan",
       role: "Facility Manager",
       location: "Industrial Park",
       rating: 5,
-      content: "ESA Windows & Doors helped us upgrade our entire facility with energy-efficient windows. The project management was excellent, and the results have improved our working environment significantly.",
+      content: "Fantastic professional window fitters. Fitted a first floor bedroom and bathroom window. Clean, and brilliant finish. Will be using for my other windows next year.",
       avatar: "/api/placeholder/64/64",
-      initials: "LP"
+      initials: "BC"
     },
     {
       id: 6,
-      name: "Robert Wilson",
+      name: "Fida Hussain",
       role: "Homeowner",
       location: "Heritage District",
       rating: 5,
-      content: "Restoring the historic windows in our century-old home required special expertise. ESA Windows & Doors preserved the original character while improving functionality. True craftmanship!",
-      avatar: "/api/placeholder/64/64",
-      initials: "RW"
+      content: "I'm extremely pleased with the window installation by Esa glazing limited. Their team was professional, efficient, and the quality of the windows is outstanding. I highly recommend them for anyone looking to upgrade their windows.",
+      initials: "FH"
     }
   ];
 
@@ -111,8 +108,8 @@ export default function Testimonials() {
                   </Avatar>
                   <div>
                     <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                    <p className="text-xs text-muted-foreground">{testimonial.location}</p>
+                    {/* <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-xs text-muted-foreground">{testimonial.location}</p> */}
                   </div>
                 </div>
               </CardContent>
@@ -128,7 +125,7 @@ export default function Testimonials() {
             </div>
             <div className="w-px h-12 bg-border"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">4.9/5</div>
+              <div className="text-2xl font-bold text-primary">5/5</div>
               <div className="text-sm text-muted-foreground">Average Rating</div>
             </div>
             <div className="w-px h-12 bg-border"></div>
