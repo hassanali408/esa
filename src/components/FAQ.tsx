@@ -131,11 +131,11 @@ export default function FAQ() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="flex items-center gap-2" data-testid="button-call-support">
                 <Phone className="w-4 h-4" />
-                Call Us: (555) 123-4567
+                Call Us: 0730 5130 643
               </Button>
               <Button variant="outline" className="flex items-center gap-2" data-testid="button-email-support">
                 <Mail className="w-4 h-4" />
-                Email: info@esaglazing.com
+                Email: esa_glazing@hotmail.com
               </Button>
             </div>
           </CardContent>
