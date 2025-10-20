@@ -23,7 +23,8 @@ import {
   Mail, 
   Clock, 
   Send,
-  CheckCircle 
+  CheckCircle,
+  Loader2 
 } from 'lucide-react';
 
 const contactFormSchema = z.object({
@@ -199,6 +200,9 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
                     </div>
                   </div>
                   
+                  {/* Hidden message to satisfy validation like the full contact page */}
+                  <input type="hidden" value="Quick quote request from compact form" {...register('message')} />
+
                   <div>
                     <Label htmlFor="email">Email *</Label>
                     <Input
@@ -236,10 +240,14 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
                     type="submit" 
                     className="w-full" 
                     disabled={isSubmitting}
+                    onClick={handleSubmit(onSubmit)}
                     data-testid="button-submit"
                   >
                     {isSubmitting ? (
-                      <>Sending...</>
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Sending...
+                      </>
                     ) : (
                       <>
                         Request Quote
@@ -401,10 +409,14 @@ export default function ContactForm({ isFullPage = false }: ContactFormProps) {
                     className="w-full" 
                     size="lg"
                     disabled={isSubmitting}
+                    onClick={handleSubmit(onSubmit)}
                     data-testid="button-full-submit"
                   >
                     {isSubmitting ? (
-                      <>Sending Message...</>
+                      <>
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        Sending Message...
+                      </>
                     ) : (
                       <>
                         Send Message
